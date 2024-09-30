@@ -13,6 +13,12 @@ Check it out here: [TalktoCV](https://talktocv.streamlit.app)
 
 - **Provide Improvement Suggestions**: Get constructive feedback on your CV’s content, format, and structure, making it more appealing to recruiters and increasing your chances of landing interviews.
 
+- **Skill Gap Analysis**: Identify skills that you may be lacking compared to job descriptions, helping you understand areas for improvement.
+
+- **Role Suggestions**: Receive recommendations for job roles that align with your skills and experience, broadening your job search.
+
+- **Formatting Suggestions**: Get tips on how to improve the layout and design of your CV for better readability and impact.
+
 - **Interactive CV Chat**: Engage in a conversational interface that allows you to ask questions about your CV, receive real-time feedback, and explore ways to enhance your application further.
 
 ## Why Choose TalktoCV?
