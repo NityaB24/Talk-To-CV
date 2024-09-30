@@ -16,14 +16,10 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 # Helper function to get the Gemini response
-def get_gemini_response(input_text, pdf_content, prompt, role="web developer"):
+def get_gemini_response(input_text, pdf_content, prompt):
     model = genai.GenerativeModel("gemini-1.5-flash")
     try:
-        if pdf_content:
-            if not input_text.strip():  # If no job description is provided
-                prompt = f"Generate 10 interview questions based on the resume and for a {role} role along with their answers."
-            else:
-                prompt = f"Generate 10 interview questions based on the resume and for the role specified in the job description along with their answers."
+        if pdf_content is not None:
             response = model.generate_content([input_text, pdf_content[0], prompt])
             return response.text
         else:
