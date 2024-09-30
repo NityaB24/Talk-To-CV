@@ -73,6 +73,7 @@ st.markdown("""
         .main { background-color: #f0efe9; color: #5c5d5f; font-family: 'Arial', sans-serif; }
         .css-1d391kg { background-color: #5c5d5f; color: #5c5d5f; }
         .eczjsme8 h1,h3 { color: #decfbf; }
+        .e1nzilvr5 h1,h3 { color: #decfbf; }
         .stButton button { background-color: #decfbf; color: #5c5d5f; border-radius: 8px; padding: 10px 15px; border: none; transition: background-color 0.3s ease; }
         .stButton button:hover { background-color: #b5a191; color: #000; }
         .stTextArea textarea { border: 1px solid #d9dadb; border-radius: 6px; background-color: #ffffff; color: #5c5d5f; }
