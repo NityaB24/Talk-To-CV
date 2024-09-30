@@ -4,6 +4,7 @@
 
 TalktoCV is an innovative tool designed to enhance your job application process by assessing your CV's compatibility with Applicant Tracking Systems (ATS), generating tailored interview questions, and providing actionable improvement suggestions. With the ability to chat directly with your CV, you can gain insights and refine your application to stand out in the competitive job market.
 
+Check it out here: [TalktoCV](https://talktocv.streamlit.app)
 ## Key Features
 
 - **Assess ATS Scores**: Evaluate how well your CV aligns with specific job descriptions to ensure it meets ATS criteria for better visibility during the hiring process.
