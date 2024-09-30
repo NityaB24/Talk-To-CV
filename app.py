@@ -136,7 +136,7 @@ prompts = {
 actions = [
     {"label": "📝 Review Resume", "key": "resume_evaluation"},
     {"label": "📊 Percentage Match", "key": "percentage_match"},
-    # {"label": "❓ Interview Questions", "key": "interview_questions"},
+    {"label": "❓ Interview Questions", "key": "interview_questions"},
     {"label": "🔍 Skill Gap Analysis", "key": "skill_gap_analysis"},
     {"label": "💼 Formatting Suggestions", "key": "formatting_suggestions"},
     {"label": "⚙️ ATS Compatibility Check", "key": "ats_compatibility"},
@@ -156,22 +156,22 @@ for action in actions:
                 st.write(response)
 
 
-if st.sidebar.button("❓ Interview Questions"):
-    with st.spinner("Generating interview questions..."):
-        pdf_content = input_pdf_setup(uploaded_file)
-        if pdf_content:
-            success_message.empty()
-            if not input_text.strip():
-                # No job description provided, fallback to web developer questions
-                response = get_gemini_response(input_text, pdf_content, prompts["interview_questions"], role="web developer")
-            else:
-                # Generate questions based on job description
-                response = get_gemini_response(input_text, pdf_content, prompts["interview_questions"])
+# if st.sidebar.button("❓ Interview Questions"):
+#     with st.spinner("Generating interview questions..."):
+#         pdf_content = input_pdf_setup(uploaded_file)
+#         if pdf_content:
+#             success_message.empty()
+#             if not input_text.strip():
+#                 # No job description provided, fallback to web developer questions
+#                 response = get_gemini_response(input_text, pdf_content, prompts["interview_questions"], role="web developer")
+#             else:
+#                 # Generate questions based on job description
+#                 response = get_gemini_response(input_text, pdf_content, prompts["interview_questions"])
 
-            st.session_state["interview_questions"] = response
-            st.success("✅ Interview Questions Generated!")
-            st.markdown("### Interview Questions and Answers")
-            st.write(response)
+#             st.session_state["interview_questions"] = response
+#             st.success("✅ Interview Questions Generated!")
+#             st.markdown("### Interview Questions and Answers")
+#             st.write(response)
 
 st.markdown("---")
 
