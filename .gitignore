@@ -1,0 +1,7 @@
+
+new/
+conda-meta/
+.env
+__pycache__/
+*.pyc
+*.pyo
